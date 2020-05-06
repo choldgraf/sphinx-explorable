@@ -16,4 +16,4 @@ def setup(app):
     # Add our static path
 
     options = {"async": "async"}
-    app.add_js_file("https://unpkg.com/ink-components", **options)
+    app.add_js_file("https://unpkg.com/@iooxa/components", **options)

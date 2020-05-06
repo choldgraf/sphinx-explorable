@@ -19,7 +19,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "Sphinx Ink"
+project = "sphinx explorable"
 copyright = "2018,"
 author = ""
 
@@ -38,7 +38,7 @@ release = ""
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ["myst_nb", "sphinx_ink"]
+extensions = ["myst_nb", "sphinx_explorable"]
 
 togglebutton_selector = ".toggle, .toggle-this-item"
 

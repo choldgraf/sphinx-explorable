@@ -1,4 +1,4 @@
-# sphinx-ink
+# sphinx-explorable
 
 [Ink components](https://iooxa.dev/) are a way of defining interactive document
 elements using Web components. This package is an attempt at exposing them to
@@ -10,20 +10,20 @@ a space to play around with the user interface and syntax for this behavior.
 Here's some raw HTML to generate components:
 
 ```
-<ink-var name="cookies" value="3" format=".4"></ink-var>
+<r-var name="cookies" value="3" format=".4"></r-var>
 <p>
-    When you eat <ink-dynamic name="cookies" min="2" max="100"> cookies</ink-dynamic>,
-    you consume <ink-display :value="cookies * 50" format=".0f">150</ink-display> calories.
+    When you eat <r-dynamic bind="cookies" min="2" max="100"> cookies</r-dynamic>,
+    you consume <r-display bind="cookies * 50" format=".0f">150</r-display> calories.
 </p>
 ```
 
 It generates this output:
 
 ```{raw} html
-<ink-var name="cookies" value="3" format=".4"></ink-var>
+<r-var name="cookies" value="3" format=".4"></r-var>
 <p>
-    When you eat <ink-dynamic name="cookies" min="2" max="100"> cookies</ink-dynamic>,
-    you consume <ink-display :value="cookies * 50" format=".0f">150</ink-display> calories.
+    When you eat <r-dynamic bind="cookies" min="2" max="100"></r-dynamic> cookies,
+    you consume <r-display bind="cookies * 50" format=".0f"></r-display> calories.
 </p>
 ```
 
